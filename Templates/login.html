@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #4A5759;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello and welcome to the BTH Education Helper.</h1>
+    <p>In order to continue, please enter your student ID:</p>
+    <h2> {{error_message}} </h2>
+    <form class="search-bar" method="POST" action="">
+        <input type="text" name="studentId" placeholder="Enter your student ID">
+        <br>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:  border-box;
+            font-family:"Poppins", sans-serif;
+        }
+
+        body{
+            position: relative;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .Nav-container{
+            width: 1280px;
+            margin: auto;
+        }
+
+        .navbar{
+            width: 95%;
+            margin: auto;
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu{
+           display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .nav-brand{
+            font-size: 2rem;
+
+        }
+ 
+
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            padding: 5%;
+            background-color: #4A5759;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .search-bar{
+            width: 100%;
+            max-width: 700px;
+            background:rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+        }
+
+        .search-bar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: #cac7ff;
+        }
+
+        ::placeholder{
+            color: black;
+        }
+
+        .search-bar button img{
+            width: 25px;
+        }
+        .search-bar button{
+            border: 0;
+            border-radius:50px;
+            width: 60px;
+            height:60px;
+            background: #58629b;
+            cursor: pointer;
+        }
+
+        .Searchimg{
+            width: 20px;
+            height: 20px;
+        }
+
+   </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="Nav-container">
+            <nav class="navbar">
+                <a href="" class="nav-brand">BABOK</a>
+                <ul class="nav-menu">
+                <li class="link"><a href="/home">Home</a></li>
+                <li class="link"><a href="/scoreboard">Scoreboard</a></li>
+                <li class="link"><a href="/current/">View Your Current Courses</a></li> 
+                <li class="link"><a href="/">Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <div class ="container">
+        
+        <form class="search-bar" method="POST" action="">
+            <input type= "text" name ="course" placeholder="Search for a course using the coursenumber (ex. MA1445)">
+            <button type="submit"><img class="Searchimg" src="/images/search.png"></button>
+        </form>
+    </div>
+    
+
+
+</body>
+
+
+</html>
