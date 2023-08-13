@@ -25,10 +25,7 @@ DROP TABLE IF EXISTS `attendings`;
 CREATE TABLE `attendings` (
   `A_ID` int NOT NULL,
   `S_ID` varchar(255) DEFAULT NULL,
-  `F_Name` varchar(255) DEFAULT NULL,
-  `L_Name` varchar(255) DEFAULT NULL,
   `C_ID` varchar(255) DEFAULT NULL,
-  `CourseName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`A_ID`),
   KEY `S_ID` (`S_ID`),
   KEY `C_ID` (`C_ID`),
